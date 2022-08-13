@@ -1,6 +1,6 @@
 #include <cctype>
 #include <cstdio>
-// 取消注释可开启缓冲(针对大文件)
+// 取消注释并删除下一行可开启缓冲(针对大文件)
 #define gc() getchar()
 // const int MAXB = 1 << 20;
 // char fbuf[MAXB], *fr = fbuf, *ed = fbuf;
