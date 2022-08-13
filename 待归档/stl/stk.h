@@ -1,3 +1,4 @@
+#pragma once
 #include "../base.h"
 
 // 固定大小的Stack

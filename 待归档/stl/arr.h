@@ -1,9 +1,10 @@
+#pragma once
 #include "../base.h"
-#include "../fun.h"
 
 template<us LEN, class T>
 struct Arr {
     T pool[LEN];
+    inl T *operator()() { ret pool; }
     inl T &operator[](con us idx) { ret pool[idx]; }
-    inl void mem(con T b, us n = LEN) { mem(pool, b, n); }
+    inl void init(con T b, us n = LEN) { mem(pool, b, n); }
 };

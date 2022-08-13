@@ -1,3 +1,4 @@
+// WARN: 以下实现常数较大，比大多数实现慢，开启O2则与裸实现相差不大
 #pragma once
 #include "../base.h"
 

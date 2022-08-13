@@ -1,5 +1,6 @@
+// TIP: 以下实现比大多数裸实现常数要小
+#pragma once
 #include "../base.h"
-// luogu实测发现居然比裸的快，而且开O2还会反向优化...
 
 #define ST_FOR               \
     for(us i = 1; i <= logl; ++i) \
