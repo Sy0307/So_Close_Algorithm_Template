@@ -1,6 +1,29 @@
 // WARN: 以下实现常数较大，比大多数实现慢，开启O2则与裸实现相差不大
 #pragma once
-#include "../base.h"
+#include <bits/stdc++.h>
+#define sf(T) sizeof(T)
+#define inl inline
+#define stc static
+#define con const
+#define cer constexpr
+#define ret return
+#define whi(c) while(c)
+using namespace std;
+using is = int;
+using il = long long;
+using us = unsigned int;
+using ul = unsigned long long;
+using fs = float;
+using fl = double;
+#define ix __int128
+using fx = long double;
+cer ul ULINF = UINT64_MAX, LINF = 0x3f3f3f3f3f3f3f3f;
+cer us USINF = UINT32_MAX, SINF = 0x3f3f3f3f;
+con string ANS[2] = {"NO", "YES"};
+extern con ul MOD;
+extern con us MAX;
+template<class T>
+inl void mem(T *arr, us b, us n) { memset(arr, b, n * sf(T)); }
 
 // 可维护[0, LEN)范围，所有[l, r)均左闭右开
 // 调用节点成员使用->访问，例：seg->add(l, r, 1);
@@ -70,6 +93,7 @@ struct BNode {
     }
 };
 
+// 查询区间最值
 template<class T, class cmp = less<T>>
 struct MNode {
     us lb, rb;
