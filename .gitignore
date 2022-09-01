@@ -1,3 +1,4 @@
 *.exe
 .vscode/settings.json
+*.bin
 字符串/.cph/.Manacher.cpp_2d4e5591bf22f354be448ea76ca72a3c.prob
